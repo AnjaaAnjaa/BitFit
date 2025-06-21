@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BitFit - Moj fitness tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f4f4f4;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    form {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    input, textarea, button {
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #27ae60;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #219150;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>BitFit</h1>
+
+  <h2>Prijava</h2>
+  <form id="loginForm">
+    <input type="email" placeholder="Email" required />
+    <input type="password" placeholder="Lozinka" required />
+    <button type="submit">Prijavi se</button>
+  </form>
+
+  <h2>Unos prehrane</h2>
+  <form id="nutritionForm">
+    <input type="text" placeholder="Obrok (npr. Doručak)" required />
+    <textarea placeholder="Što si pojeo/la?" required></textarea>
+    <input type="number" placeholder="Unesene kalorije" required />
+    <button type="submit">Spremi obrok</button>
+  </form>
+
+  <h2>Unos treninga</h2>
+  <form id="workoutForm">
+    <input type="text" placeholder="Vrsta treninga (npr. Trčanje)" required />
+    <input type="number" placeholder="Trajanje (min)" required />
+    <input type="number" placeholder="Potrošene kalorije" required />
+    <button type="submit">Spremi trening</button>
+  </form>
+
+  <h2>Moji ciljevi</h2>
+  <form id="goalsForm">
+    <textarea placeholder="Npr. Izgubiti 5 kg do kolovoza" required></textarea>
+    <button type="submit">Spremi cilj</button>
+  </form>
+
+</body>
+</html>
